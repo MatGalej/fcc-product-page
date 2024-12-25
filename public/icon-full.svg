@@ -1,0 +1,40 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 300 100"
+  width="300"
+  height="100"
+  fill="none"
+>
+  <!-- Embed custom font -->
+  <style>
+    @font-face {
+      font-family: 'EngraversOldEnglish';
+      src: url('OPTIEngraversOldEnglish.otf') format('opentype');
+    }
+    .custom-font {
+      font-family: 'EngraversOldEnglish';
+    }
+  </style>
+
+  <!-- Outer circle -->
+  <circle cx="50" cy="50" r="48" stroke="black" stroke-width="4" fill="white" />
+
+  <!-- Hour markers -->
+  <line x1="50" y1="5" x2="50" y2="15" stroke="black" stroke-width="2" />
+  <line x1="50" y1="95" x2="50" y2="85" stroke="black" stroke-width="2" />
+  <line x1="5" y1="50" x2="15" y2="50" stroke="black" stroke-width="2" />
+  <line x1="95" y1="50" x2="85" y2="50" stroke="black" stroke-width="2" />
+
+  <!-- Watch hands -->
+  <line x1="50" y1="50" x2="50" y2="20" stroke="black" stroke-width="3" />
+  <line x1="50" y1="50" x2="70" y2="50" stroke="black" stroke-width="2" />
+
+  <!-- Center circle -->
+  <circle cx="50" cy="50" r="3" fill="black" />
+
+  <!-- Text: Chicago Watches -->
+  <text x="120" y="55" font-size="20" font-family="" fill="black" alignment-baseline="middle">
+    Chicago Watches
+  </text>
+</svg>
