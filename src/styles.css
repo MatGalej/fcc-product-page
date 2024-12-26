@@ -1,24 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 *, *::before, *::after {
     box-sizing: border-box;
-    background-color: bisque;
+    /*border: 1px solid red; !* TODO: TEMPORARY, REMOVE LATER *!*/
 }
 
-@font-face {
-    font-family: 'EngraversOldEnglish';
-    src: url("../public/OPTIEngraversOldEnglish.otf") format("opentype");
-}
-
-.custom-font {
-    font-family: 'EngraversOldEnglish', serif;
+body {
+    margin: 0;
 }
 
 #header {
+    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
+    width: 100%;
+    background-color: #D4A373;;
+    border-bottom: 3px solid black;
+    height: 100px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#header nav {
+    font-size: 1.5rem;
+    margin: auto 5px auto auto;
+    padding: 20px;
 }
 
 #header-img {
-    margin: 5px;
+    margin: auto 10px;
+    width: 70px;
+    height: 70px;
+}
+
+#nav-bar a {
+    margin: 25px;
+    font-family: "Raleway", sans-serif;
+}
+
+#nav-bar a:hover {
+    background-color: #CCD5AE;
+    border-radius: 5px;
+}
+
+#caption {
+    font-family: 'Quintessential', serif;
+    font-size: 2rem;
+    margin: auto auto auto 5px;
+}
+
+#main-page-bg {
+    background-color: #FAEDCD;
+    margin-top: 100px;
+    height: 100vh;
+}
+
+#text-header {
+    font-family: "Raleway", sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 200px;
 }
