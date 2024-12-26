@@ -5,7 +5,6 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
-    /*border: 1px solid red; !* TODO: TEMPORARY, REMOVE LATER *!*/
 }
 
 body {
@@ -67,9 +66,16 @@ body {
     position: absolute;
     z-index: -1;
     background-color: #FAEDCD;
-    margin-top: 100px;
-    height: 330vh;
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Optional: Center content horizontally */
+    justify-content: flex-start; /* Optional: Align content at the top */
+    padding-top: 100px; /* Avoid overlap with the header */
+    background-size: cover; /* Ensure background scales properly */
+    background-repeat: no-repeat; /* Avoid repeating the background */
+    background-attachment: fixed; /* Optional: Makes background fixed during scroll */
 }
 
 #page-header {
@@ -149,6 +155,8 @@ body {
 
 .image-boxes {
     display: grid;
+    margin-left: 10px;
+    margin-right: 10px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 100px 50px;
@@ -209,10 +217,12 @@ body {
 
 #submit {
     margin-top: 15px;
+    margin-bottom: 50px;
     width: 400px;
     height: 25px;
     border-radius: 10px;
     font-family: "Raleway", sans-serif;
+    background-color: #E9EDC9;
 }
 
 #submit:hover {
@@ -228,4 +238,46 @@ body {
     top: 100%;
     border-top: 3px solid black;
     text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 800px) {
+    .image-boxes {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(-1, 1fr);
+    }
+
+    #header nav {
+        display: block;
+        flex-wrap: wrap;
+        font-size: 1rem;
+        margin: auto 5px auto auto;
+        padding: 20px;
+    }
+
+    #header-img {
+        margin: auto 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    #caption {
+        font-family: 'Quintessential', serif;
+        font-size: 1.5rem;
+        margin: auto auto auto 5px;
+    }
+
+    #nav-bar a {
+    margin: 10px;
+
+}
+}
+
+@media screen and (max-width: 1024px) {
+    .image-boxes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(-1, 1fr);
+    }
 }
