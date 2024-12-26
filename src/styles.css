@@ -19,13 +19,14 @@ body {
     align-items: flex-end;
     justify-content: space-between;
     width: 100%;
-    background-color: #D4A373;;
+    background-color: #D4A373;
     border-bottom: 3px solid black;
     height: 100px;
     top: 0;
     left: 0;
     margin: 0;
     padding: 0;
+    flex-wrap: nowrap;
 }
 
 #header nav {
@@ -67,7 +68,7 @@ body {
     z-index: -1;
     background-color: #FAEDCD;
     margin-top: 100px;
-    height: 100%;
+    height: 300vh;
     width: 100%;
 }
 
@@ -75,6 +76,7 @@ body {
     margin: 50px auto auto auto;
     text-align: center;
     width: 85%;
+    scroll-margin-top: 150px;
 }
 
 #mission-statement {
@@ -89,19 +91,84 @@ body {
 }
 
 #company-values {
-    margin-top: 100px;
+    margin: 100px auto 0;
+    width: 90%;
+    display: flex;
 }
 
 #company-values li {
     list-style: none;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+#company-values .material-symbols-outlined {
+    font-size: 3rem;
+    margin-right: 50px;
+    margin-top: 20px;
+    color: #CCD5AE;
 }
 
 #company-values p {
+    margin: 5px 0 0 0; /* Add some space above the paragraph */
     font-family: "Raleway", sans-serif;
 }
 
 #our-products {
+    scroll-margin-top: 150px;
     font-size: 3rem;
     text-align: center;
     margin-top: 100px;
+}
+
+#contact-us {
+    scroll-margin-top: 150px;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#box-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 100px 50px;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.image-description {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#footer {
+    background-color: #D4A373;
+    position: absolute;
+    font-family: "Raleway", sans-serif;
+    width: 100%;
+    height: 50px;
+    top: 100%;
+    border-top: 3px solid black;
+    text-align: center;
 }
