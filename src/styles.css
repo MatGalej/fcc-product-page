@@ -96,16 +96,11 @@ body {
     list-style: none;
 }
 
-#company-values h2 {
-    font-family: "Quintessential", sans-serif;
-}
-
 #company-values p {
     font-family: "Raleway", sans-serif;
 }
 
 #our-products {
-     font-family: "Quintessential", sans-serif;
     font-size: 3rem;
     text-align: center;
     margin-top: 100px;
