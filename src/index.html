@@ -67,7 +67,6 @@
 
             <div id="products">
                 <h1 id="our-products" class="fancy-text">Our Products</h1>
-
                 <div id="box-wrapper">
                     <div class="image-boxes">
                         <div class="box">
@@ -111,18 +110,31 @@
                         <div class="box">
                             <img class="image"
                                  src="https://i.ebayimg.com/images/g/MgsAAOSwH-xm4V1U/s-l1200.jpg"
-                                 alt=""
+                                 alt="Seiko Men's Essentials SUR485 ($275)"
                             />
-                            <p class="image-description">Placeholder</p>
+                            <p class="image-description">Seiko Men's Essentials SUR485 ($275)</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="email-form">
-                <h1 id="contact-us" class="fancy-text">Contact Us</h1>
-                <form method="post" action="https://www.freecodecamp.com/email-submit">
+             <div id="video-wrapper">
+               <iframe width="560" height="315" loading="lazy"
+                       src="https://www.youtube.com/embed/bJShcWgl0eA?si=5dieosbTCkZTMfVd&amp;controls=0"
+                       title="YouTube video player" frameborder="0"
+                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="video"></iframe>
+            </div>
 
+            <div id="email-form">
+                <h1 id="contact-us" class="fancy-text">Contact Us</h1>
+                <p>Enter your email to receive various promotions from us, and some spectacular deals!</p>
+
+                <form method="post" id="form" action="https://www.freecodecamp.com/email-submit">
+                    <label for="email">
+                        <input type="email" id="email" placeholder="Enter your email address">
+                    </label>
+                    <input type="submit" id="submit" value="Submit!" />
                 </form>
             </div>
 
